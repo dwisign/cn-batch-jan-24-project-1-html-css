@@ -14,12 +14,17 @@ p,li{
     max-width: 1300px; 
     margin: 0 auto;
 }
+.cont-medium{
+    max-width: 768px;
+}
 .btn-primary{
     background: #5f13d9;
+    border: 1px solid #5f13d9;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 8px;
+    cursor: pointer;
 }
 .btn-primary:hover{
     background: #4609a9;
@@ -73,4 +78,39 @@ th,td{
 }
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+.form-group{
+    margin-bottom: 30px;
+}
+.input-form{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #dedede;
+    background: #fff;
+}
+textarea{
+    max-width: 100%;
+}
+.mobile-button{
+    display: none;
+}
+
+@media (max-width: 1360px) {
+    .container{
+        padding: 0px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .media-video{
+        height: 350px;
+        width: 100%
+    }
+    .mobile-button{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+    }
 }
